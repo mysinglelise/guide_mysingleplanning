@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Single Planning — Guide des copines</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #fff5f5;
+    color: #1e293b;
+    padding: 0;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: 48px 52px 60px;
+  }
+
+  /* TITRE */
+  .titre {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 3px solid #fee2e2;
+    margin-bottom: 32px;
+  }
+  .titre h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #C0392B;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .titre .sub {
+    font-size: 17px;
+    color: #94a3b8;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .titre .badges {
+    font-size: 13px;
+    color: #94a3b8;
+  }
+  .titre .badges span {
+    margin: 0 6px;
+  }
+
+  /* SECTIONS */
+  .section {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid #fef2f2;
+  }
+  .section:last-child { border-bottom: none; }
+
+  .section h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #C0392B;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section p {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 8px 0;
+    padding: 0;
+  }
+  ul li {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.6;
+    padding: 3px 0 3px 22px;
+    position: relative;
+  }
+  ul li::before {
+    content: "•";
+    color: #C0392B;
+    font-weight: bold;
+    position: absolute;
+    left: 6px;
+  }
+
+  .tip {
+    background: #fffbeb;
+    border-left: 3px solid #fbbf24;
+    border-radius: 0 8px 8px 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #92400e;
+    font-style: italic;
+    margin-top: 10px;
+  }
+
+  /* LIEN */
+  .lien-box {
+    background: #fff5f5;
+    border: 2px solid #fca5a5;
+    border-radius: 12px;
+    text-align: center;
+    padding: 16px 20px;
+    margin: 10px 0;
+  }
+  .lien-box a {
+    color: #C0392B;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 24px 0 8px;
+    font-size: 13px;
+    color: #94a3b8;
+    font-style: italic;
+    border-top: 2px solid #fef2f2;
+    margin-top: 8px;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; }
+    .page { padding: 20px 30px; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="titre">
+    <h1>MY SINGLE PLANNING</h1>
+    <p class="sub">ton app de planning perso 🗓️✨</p>
+    <p class="badges">
+      <span>Gratuite</span>•<span>Sans pub</span>•<span>Tes données t'appartiennent</span>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🔐 Pour commencer</h2>
+    <p>Va sur le lien, entre ton email + un mot de passe, clique <strong>Créer un compte</strong> — et c'est parti ! 🎉</p>
+    <div class="lien-box">
+      <a href="https://mysinglelise.github.io/monplanificateur/">mysinglelise.github.io/monplanificateur</a>
+    </div>
+    <div class="tip">💡 Tes données sont 100% privées — personne d'autre ne les voit.</div>
+  </div>
+
+  <div class="section">
+    <h2>📅 Ton planning</h2>
+    <p>4 vues pour tout voir :</p>
+    <ul>
+      <li><strong>Jour</strong> — tes événements du jour en détail</li>
+      <li><strong>Semaine</strong> — ton emploi du temps fixe</li>
+      <li><strong>Mois</strong> — le calendrier complet avec TOUT dedans 🌈</li>
+      <li><strong>Année</strong> — le grand angle</li>
+    </ul>
+    <div class="tip">💡 L'app gère 3 types de semaines différentes — elle sait toute seule dans laquelle on est !</div>
+  </div>
+
+  <div class="section">
+    <h2>💊 Tracker intermittence</h2>
+    <p>Le bouton violet 💊 en haut à gauche — pour les intermittentes du spectacle !</p>
+    <ul>
+      <li>Écris <strong>concert, tournage, atelier, enregistrement studio, action culturelle</strong> ou <strong>repetitionP</strong> dans un événement → compté automatiquement comme cachet 🔴</li>
+      <li>Écris <strong>option + concert</strong> → compté comme option 🟢</li>
+      <li>Le panneau affiche : cachets validés, options, total, ta période d'indemnisation, combien il en manque et le temps restant ⏳</li>
+      <li>Dans la vue mois, clique sur 💊 pour valider/invalider un cachet</li>
+    </ul>
+    <div class="tip">💡 Zéro saisie manuelle — tu écris juste ton événement normalement.</div>
+  </div>
+
+  <div class="section">
+    <h2>👁️🩸 Tracker de cycle</h2>
+    <p>Le bouton rose 👁️🩸 en haut à gauche.</p>
+    <ul>
+      <li>Vue mois → <strong>appui long</strong> sur un jour (téléphone) ou <strong>clic droit</strong> (ordi) pour noter tes règles</li>
+      <li>Flux 1🔴 / 2🔴🔴 / 3🔴🔴🔴 + crampes ⚡️ (en rouge vif !)</li>
+      <li>Le panneau prédit ton prochain cycle et ton ovulation 🥚</li>
+      <li>Fenêtre fertile = fond rose dans le calendrier</li>
+      <li>Bonus : phases de lune visibles 🌕🌑</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>👥 Membres de la famille</h2>
+    <p>Le bouton orange 👥 en haut à gauche.</p>
+    <ul>
+      <li>Ajoute les prénoms de tes proches + choisis une couleur 🟢🔵🟣🟠🩷🟤</li>
+      <li>Écris juste le prénom dans un événement → il s'affiche dans sa couleur !</li>
+      <li>Vue jour : barre colorée à gauche. Vue mois : badge coloré.</li>
+    </ul>
+    <div class="tip">💡 Chaque utilisatrice a ses propres membres — entièrement personnalisable.</div>
+  </div>
+
+  <div class="section">
+    <h2>🛒 Liste de courses</h2>
+    <p>Le bouton vert 🛒 en haut.</p>
+    <ul>
+      <li>Plusieurs magasins avec noms personnalisables</li>
+      <li>Coche les articles au fur et à mesure</li>
+      <li>Bouton ↺ pour tout décocher d'un coup 🔄</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📌 Post-its &amp; ⚙️ Personnalisation</h2>
+    <ul>
+      <li>Bouton 📌 en haut à droite → jusqu'à 4 post-its rapides</li>
+      <li>Bouton ⚙️ en haut à droite → active/désactive les modules que tu veux voir (tracker règles, intermittence, courses, post-its, membres)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💾 Sauvegarde &amp; synchro</h2>
+    <ul>
+      <li>Tout est synchronisé automatiquement entre tes appareils 🔄</li>
+      <li>Bouton 💾 en bas → télécharge toutes tes données</li>
+      <li>Bouton 📂 en bas → réimporte une sauvegarde</li>
+      <li>Bouton 🚪 en bas → déconnexion</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📱 Installer l'app sur ton téléphone</h2>
+    <ul>
+      <li><strong>iPhone</strong> → ouvre dans Safari → bouton partage ↑ → "Sur l'écran d'accueil"</li>
+      <li><strong>Android</strong> → ouvre dans Chrome → ··· → "Ajouter à l'écran d'accueil"</li>
+      <li><strong>Mac/Windows</strong> → Chrome → icône ⊕ dans la barre → "Installer"</li>
+    </ul>
+    <div class="tip">💡 Elle se comporte comme une vraie app — même sans internet !</div>
+  </div>
+
+  <div class="section">
+    <h2>👯 Partager avec des copines</h2>
+    <p>Envoie le lien — chacune crée son propre compte et a son espace privé. Vos données ne se mélangent jamais 🔒</p>
+    <div class="lien-box">
+      <a href="https://mysinglelise.github.io/monplanificateur/">mysinglelise.github.io/monplanificateur</a>
+    </div>
+  </div>
+
+  <footer>
+    Fait avec ❤️ pour les copines
+  </footer>
+
+</div>
+</body>
+</html>
